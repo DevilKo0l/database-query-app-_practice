@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Npgsql;
+﻿using Npgsql;
+using System;
 
 namespace DatabaseAccess
 {
     public class DBConnection
     {
-        private DBConnection() { }
+        private DBConnection(){    }
 
         private static NpgsqlConnection conn;
 
@@ -32,6 +28,5 @@ namespace DatabaseAccess
             Console.WriteLine("Access failed");
             return conn;
         }
-
     }
 }
